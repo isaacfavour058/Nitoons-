@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         body : ["DM Sans", "sans-serif"],
         poppin: ["Poppins", "sans-serif"],
-        clash : ['Clash Grotesk']
+        clash : ['Clash Grotesk'],
+        mori : ['PPMori', "sans-serif"]
 
       },
 

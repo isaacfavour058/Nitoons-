@@ -12,3 +12,9 @@
     font-weight: 200 700;  /* This range covers Extralight to Bold */
     font-style: normal;
 }
+@font-face {
+    font-family: 'PPMori';
+    src: url('../../src/fonts') format('otf');
+    font-weight: 200 700;  /* This range covers Extralight to Bold */
+    font-style: normal;
+}
