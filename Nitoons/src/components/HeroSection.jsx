@@ -120,7 +120,7 @@ function HeroSection() {
       <div className=" bg-teal-500 w-full  ">
         <div className="leading-tigh py-10 lg:px-8 px-5  ">
           <p className="font-mori font-bold text-4xl lg:text-[44px] leading-10 pb-10 lg:w-[54.25rem] lg:ml-1 ">
-            Master the Art of Animation Editing{' '}
+            Master the Art of Animation Editing
             <span className="font-mori font-medium text-4xl lg:text-[44px] ">
               Create stunning animations with the right edits
             </span>
@@ -195,7 +195,7 @@ function HeroSection() {
             className="flex transition-transform ease-out duration-500"
             style={{ transform: `translateX(-${curr * 100}%)` }}
           >
-            {slides.map((_, index) => (
+            {slides.map((_,index) => (
               <div key={index} className="flex-none w-full">
                 <div className="flex overflow-x-auto snap-x snap-mandatory">
                   {slides.slice(index, index + 3).map((s) => (
@@ -307,8 +307,7 @@ function HeroSection() {
 
       <div className=" flex flex-row justify-center items-center ">
         <button className="font-mori  hover:rounded-0 bg-black lg:text-[64px]  text-[2.5rem] text-white px-16  rounded-2xl font-medium hover:bg-zinc-800">
-          {' '}
-          Get Started{' '}
+          Get Started
         </button>
       </div>
 
@@ -394,7 +393,7 @@ function HeroSection() {
                 Film making
               </p>
               <p className="text-sm font-poppin font-normalcursor-pointer ">
-                making
+                Making
               </p>
               <p className="text-sm font-poppin font-normal cursor-pointer">
                 Scriptwriting
