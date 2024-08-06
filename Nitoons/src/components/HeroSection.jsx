@@ -15,17 +15,21 @@ import GreenVector from '../../src/assets/images/greenVector.svg';
 import GreenVectorUp from '../../src/assets/images/greenVeectorUp.svg';
 import { useState } from 'react';
 import NavyGreenQuote from '../../src/assets/images/navyGreenQuote.svg';
-// import BigCircle from "../../src/assets/images/BIGHALFCIRCLE.svg";
-// import BigSquare from "../../src/assets/images/BIGSQARE/svg";
-// import SmallHalfCircle from "../../src/assets/images/SMALLHALFCIRCLE.src";
-// import SmallCell from "../../src/assets/images/SMALLCELL.src";
-// import FullCircle from "../../src/assets/images/FULLCIRCLE.svg";
-// import Green from '../../src/assets/images/Green.png';
-// import Hexagon from '../../src/assets/images/HEXAGON.svg';
-// import BigCell from '../../src/assets/images/Bigcell.png';
-import Props from '../../src/assets/images/props.png';
-import Props2 from '../../src/assets/images/prop1.png';
+import FanIcon from '../../src/assets/images/fanIcon.png';
+import PurpleFan from '../../src/assets/images/purpleFan.png';
 import LightBlueQuote from '../../src/assets/images/lightBlueQuote.svg';
+import AudioAnimation from '../../src/assets/images/AudioAnimation.svg';
+import BlueBow from '../../src/assets/images/blueBow.png';
+import Ribbon from '../../src/assets/images/ribbon1.png';
+import PurpleClip from '../../src/assets/images/purpleClip.png';
+import PurpleHalfCircle from '../../src/assets/images/purpleHalfCircle.png';
+import BlueFan from '../../src/assets/images/blueFan.png';
+import HalfArc from '../../src/assets/images/halfArc.png';
+import BlueTiles from '../../src/assets/images/blueTiles.png';
+import PurpleBoxes from '../../src/assets/images/purpleBoxes.png';
+import AudioPlay from '../../src/assets/images/audioPlayAnimation.svg';
+import AudioNext from '../../src/assets/images/audioNextAnimation.svg';
+import SignalAnimation from '../../src/assets/images/signalAnimation.svg';
 
 const slides = [
   {
@@ -60,7 +64,7 @@ function HeroSection() {
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
   return (
-    <div className="flex-col justify-center items-center mt-8 ">
+    <div className=" flex-col justify-center items-center mt-8 w-auto">
       <div className=" mb-36 ">
         <div className="flex flex-row justify-center items-center lg:px-8 px-5  ">
           <img src={HeaderBanner} alt="BanneerImg" className="w-full" />
@@ -164,7 +168,7 @@ function HeroSection() {
 
       <div className="bg-[#28A0B5] w-full lg:px-8 px-5 pb-6">
         <div className="">
-          <p className="  font-mori lg:w-[42rem] lg:font-semibold font-bold  py-8  lg:text-5xl w-[23rem] text-3xl">
+          <p className="  font-mori lg:w-[42rem] lg:font-semibold font-bold  py-8  lg:text-5xl  text-3xl">
             Unlock the Power of Words.
             <span className="font-mori font-normal">
               {' '}
@@ -195,7 +199,7 @@ function HeroSection() {
             className="flex transition-transform ease-out duration-500"
             style={{ transform: `translateX(-${curr * 100}%)` }}
           >
-            {slides.map((_,index) => (
+            {slides.map((_, index) => (
               <div key={index} className="flex-none w-full">
                 <div className="flex overflow-x-auto snap-x snap-mandatory">
                   {slides.slice(index, index + 3).map((s) => (
@@ -279,7 +283,7 @@ function HeroSection() {
           </div>
         </div> */}
 
-      <div className="lg:flex-row lg:items-end  flex flex-col lg:px-8 px-5 ">
+      <div className="lg:flex-row lg:items-end mb-10 flex flex-col lg:px-8 px-5 ">
         <div className=" mb-4  flex flex-col ">
           <img
             src={NavyGreenQuote}
@@ -301,19 +305,91 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="">
-        <img src={Props2} alt="" className="w-[98.7vw]" />
+      <div></div>
+
+      <div className="relative">
+        <img
+          src={AudioAnimation}
+          alt="audio animation"
+          className="absolute lg:w-[8rem] w-[5rem]"
+        />
+        <img
+          src={FanIcon}
+          alt="audio animation"
+          className="relative lg:w-[8rem] w-[4rem] "
+        />
+        <img
+          src={BlueBow}
+          alt="blue bow"
+          className=" lg:left-60 lg:top-48 lg:absolute relative left-7 top-16   lg:w-[8rem] w-[4rem] "
+        />
+        <img
+          src={Ribbon}
+          alt="Ribbon"
+          className=" absolute lg:left-1/2 lg:bottom-0 right-32 top-3  lg:w-[8rem] w-[5rem] "
+        />
+        <img
+          src={PurpleClip}
+          alt="purpleclip"
+          className=" absolute lg:right-56 top-0 lg:bottom-0 right-10 bottom-1/2  lg:w-[8rem] w-[5rem] "
+        />
+        <img
+          src={PurpleHalfCircle}
+          alt="PurpleHalfCircle"
+          className="absolute lg:top-36 bottom-0 top-24 right-0 lg:w-[8rem] w-[4rem]"
+        />
+        <img
+          src={BlueFan}
+          alt="BlueFan"
+          className="absolute lg:top-36 right-0 top-24 lg:w-[4rem] w-[2rem] "
+        />
       </div>
 
-      <div className=" flex flex-row justify-center items-center ">
-        <button className="font-mori  hover:rounded-0 bg-black lg:text-[64px]  text-[2.5rem] text-white px-16  rounded-2xl font-medium hover:bg-zinc-800">
+      <div className="relative flex flex-row justify-center items-center lg:my-40 my-10 ">
+        <button className=" font-mori  hover:rounded-0 bg-black lg:text-[64px]   text-[2.5rem] text-white lg:px-16 px-2  rounded-2xl font-medium hover:bg-zinc-800">
           Get Started
         </button>
       </div>
 
-      <div className="">
-        <img src={Props} alt="" className="w-[98.7vw]" />
+      <div className="relative">
+        <img
+          src={PurpleFan}
+          alt="purple animation"
+          className="absolute bottom-6 lg:w-[8rem] w-[3rem] "
+        />
+        <img
+          src={HalfArc}
+          alt="purple animation"
+          className="absolute lg:w-[18rem] w-[4rem] left-72 bottom-0"
+        />
+        <img
+          src={AudioNext}
+          alt="AudioNext"
+          className="absolute bottom-0 left-60  w-fit "
+        />
+        <img
+          src={SignalAnimation}
+          alt="purple animation"
+          className="absolute bottom-20 left-96   w-fit "
+        />
+        <img
+          src={BlueTiles}
+          alt="purple animation"
+          className="absolute bottom-6 right-72   w-fit "
+        />
+        <img
+          src={PurpleBoxes}
+          alt="purple animation"
+          className="absolute bottom-0 right-0 lg:w-[7rem] w-[4rem]   "
+        />
+        <img
+          src={AudioPlay}
+          alt="purple animation"
+          className="absolute bottom-6 right-0 lg:w-[5rem] w-[4rem] "
+        />
       </div>
+
+      
 
       <div className=" bg-black lg:h-[42rem] h-[65rem] font-mori  ">
         <div className="  mx-5 lg:mb-36  mt-10 pt-10 ">
