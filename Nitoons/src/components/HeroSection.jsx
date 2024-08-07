@@ -305,93 +305,92 @@ function HeroSection() {
         </div>
       </div>
 
-      <div></div>
-
-      <div className="relative">
+      <div className="relative lg:h-72 h-28">
+        {/* First set of icons (unchanged) */}
         <img
           src={AudioAnimation}
           alt="audio animation"
-          className="absolute lg:w-[8rem] w-[5rem]"
+          className="absolute lg:w-[12rem] md:w-[6rem] w-[3rem]"
         />
         <img
           src={FanIcon}
           alt="audio animation"
-          className="relative lg:w-[8rem] w-[4rem] "
+          className="relative lg:w-[9rem] md:w-[5rem] w-[2.5rem] "
         />
         <img
           src={BlueBow}
           alt="blue bow"
-          className=" lg:left-60 lg:top-48 lg:absolute relative left-7 top-16   lg:w-[8rem] w-[4rem] "
+          className=" lg:left-64 left-11 top-28 md:left-60 md:top-28 absolute lg:top-60 lg:w-[9rem] w-[3.9rem]"
         />
         <img
           src={Ribbon}
           alt="Ribbon"
-          className=" absolute lg:left-1/2 lg:bottom-0 right-32 top-3  lg:w-[8rem] w-[5rem] "
+          className="absolute lg:left-1/2 lg:bottom-0 md:right-64 md:-top-2 right-32 top-3 lg:w-[8rem] md:w-[6rem]  w-[3.8rem]"
         />
         <img
           src={PurpleClip}
           alt="purpleclip"
-          className=" absolute lg:right-56 top-0 lg:bottom-0 right-10 bottom-1/2  lg:w-[8rem] w-[5rem] "
+          className="absolute lg:right-56 top-0 lg:bottom-0 right-10  bottom-1/2 lg:w-[8rem] w-[5rem]"
         />
         <img
           src={PurpleHalfCircle}
           alt="PurpleHalfCircle"
-          className="absolute lg:top-36 bottom-0 top-24 right-0 lg:w-[8rem] w-[4rem]"
+          className="absolute lg:top-48 md:top-20 bottom-0 md:w-[4.7rem] top-24 right-0 lg:w-[8rem] w-[3rem]"
         />
         <img
           src={BlueFan}
           alt="BlueFan"
-          className="absolute lg:top-36 right-0 top-24 lg:w-[4rem] w-[2rem] "
+          className="absolute lg:top-44 right-0 top-20 md:w-[2.7rem] lg:w-[4rem] w-[2rem]"
         />
+        
       </div>
 
-      <div className="relative flex flex-row justify-center items-center lg:my-40 my-10 ">
-        <button className=" font-mori  hover:rounded-0 bg-black lg:text-[64px]   text-[2.5rem] text-white lg:px-16 px-2  rounded-2xl font-medium hover:bg-zinc-800">
+      <div className="relative flex flex-row justify-center items-center lg:mb-40 my-10">
+        <button className="font-mori hover:rounded-0 bg-black lg:text-[64px] text-[2rem] text-white lg:px-16 px-2 rounded-2xl font-medium hover:bg-zinc-800">
           Get Started
         </button>
       </div>
 
-      <div className="relative">
-        <img
+
+      <div className="relative lg:h-52 ">
+      <img
           src={PurpleFan}
           alt="purple animation"
-          className="absolute bottom-6 lg:w-[8rem] w-[3rem] "
-        />
+          className="  relative lg:-top-40 md:w-[5rem] bottom-12 lg:w-[8rem] w-[3rem]"
+        /> 
         <img
           src={HalfArc}
           alt="purple animation"
-          className="absolute lg:w-[18rem] w-[4rem] left-72 bottom-0"
+          className=" absolute lg:w-[18rem] left-20 md:left-52 md:w-[8rem] w-[5.5rem] lg:left-72 -bottom-10"
         />
         <img
           src={AudioNext}
           alt="AudioNext"
-          className="absolute bottom-0 left-60  w-fit "
+          className="absolute -bottom-10 lg:left-60 md:w-[2.2rem] md:left-48 left-16 w-[1.7rem] lg:w-fit"
         />
         <img
           src={SignalAnimation}
           alt="purple animation"
-          className="absolute bottom-20 left-96   w-fit "
+          className=" absolute lg:bottom-10 left-24 md:left-60 md:-bottom-2 -bottom-7 lg:left-96 w-[3.5rem] lg:w-[7rem]"
         />
         <img
           src={BlueTiles}
           alt="purple animation"
-          className="absolute bottom-6 right-72   w-fit "
+          className="absolute -bottom-10 lg:right-72 md:right-60 md:w-[5rem] right-20 w-[3rem] lg:w-fit"
         />
         <img
           src={PurpleBoxes}
           alt="purple animation"
-          className="absolute bottom-0 right-0 lg:w-[7rem] w-[4rem]   "
+          className="absolute lg:bottom-0 -bottom-6 right-0 lg:w-[7rem] md:w-[5rem] w-[3rem]"
         />
         <img
           src={AudioPlay}
           alt="purple animation"
-          className="absolute bottom-6 right-0 lg:w-[5rem] w-[4rem] "
+          className="absolute lg:bottom-6 -bottom-4 md:w-[4rem] right-0 lg:w-[5rem] w-[2.5rem]"
         />
       </div>
 
-      
-
-      <div className=" bg-black lg:h-[42rem] h-[65rem] font-mori  ">
+      <div className=" bg-black lg:h-[42rem] h-[65rem] font-mori ">
         <div className="  mx-5 lg:mb-36  mt-10 pt-10 ">
           <p className="text-white lg:text-[44px] text-3xl mb-2 font-medium text-body">
             Know how to use Timeline
@@ -430,8 +429,8 @@ function HeroSection() {
           </div>
         </div>
 
-        <div className="lg:flex  pb-10 justify-between lg:mx-10 mx-5 text-white mb-10">
-          <div className="mb-6">
+        <div className="lg:flex  pb-10  justify-between lg:mx-10 mx-5 text-white ">
+          <div className=" mb-6">
             <p className="text-white text-[40px] font-bold font-poppin">
               Timeline
             </p>
@@ -460,7 +459,7 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="lg:flex gap-8">
+          <div className="lg:flex md:flex gap-8  ">
             <div className="flex flex-col lg:space-y-4 space-y-2  cursor-pointer">
               <p className="text-lg font-bold font-poppin cursor-pointer">
                 Product
@@ -475,7 +474,7 @@ function HeroSection() {
                 Scriptwriting
               </p>
             </div>
-            <div className="flex flex-col mt-4 lg:space-y-4 space-y-2  cursor-pointer">
+            <div className="flex flex-col  lg:space-y-4 space-y-2  cursor-pointer">
               <p className="text-lg font-bold font-poppin cursor-pointer">
                 Resources
               </p>
@@ -501,7 +500,7 @@ function HeroSection() {
                 Web based
               </p>
             </div>
-            <div className="flex flex-col lg:space-y-4 space-y-2  mt-4">
+            <div className="flex flex-col lg:space-y-4 space-y-2  ">
               <p className="text-lg font-bold font-poppin cursor-pointer">
                 Use Cases
               </p>
@@ -521,7 +520,7 @@ function HeroSection() {
                 Generative AI
               </p>
             </div>
-            <div className=" mt-4 flex flex-col lg:space-y-4 space-y-2  ">
+            <div className=" flex flex-col lg:space-y-4 space-y-2  ">
               <p className="text-lg font-bold font-poppin cursor-pointer">
                 Company
               </p>
