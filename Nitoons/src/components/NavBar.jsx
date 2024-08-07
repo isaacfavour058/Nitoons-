@@ -21,7 +21,7 @@ const NavBar = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="lg:px-8 px-5">
+    <div className="lg:px-8 w-full px-5">
       <div className="flex flex-row justify-between items-center ">
         <div className="flex flex-row justify-between items-center gap-4">
           <div className="flex flex-row justify-center align-middle items-center">

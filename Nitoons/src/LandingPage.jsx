@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 const LandingPage = () => {
   return (
     <>
-      <div className="min:w-[75rem]  ">
+      <div className="lg:min:w-[75rem]  ">
 
       <NavBar />
       <Header />
